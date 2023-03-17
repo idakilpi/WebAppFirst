@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@*JQuery, joka suoritetaan aina, kun sivu latautuu*@
+@section scripts {
+    <script type="text/javascript">
+        $(window).on('load', function () { if
+        (@ViewBag.LoginError == 1) {
+        $('#LoginRuutu').modal('show');
+        }
+        });
+    </script>
+}
+<div class="jumbotron">
+    <h1>Northwind demo app</h1>
+    <p><a class=" btn btn-primary"><img src="~/Icons/laptop.svg">Mallibutton</a></p>
+    <p class="lead">Tämä on Northwind- sovelluksen working demo</p>
+    @for (int i = 0; i < 10; i++)
+    {
+        <p>@i</p>
+    }
+
+
+    <p>Nyt on @DateTime.Now</p>
+
+</div>
+
+@{ 
+    Html.RenderPartial("_LoginModal");
+}
