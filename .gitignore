@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # Config
 .config
+/WebAppFirst/Web.Release.config
+/WebAppFirst/Web.Debug.config
+/WebAppFirst/Web.config
