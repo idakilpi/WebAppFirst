@@ -180,5 +180,10 @@ namespace WebAppFirst.Controllers
 
             return View(orderSummary);
         }
+        public ActionResult OrderHeading()
+        {
+            var orders = db.Orders.Include(o => o.Customers).Include(o => o.Employees).Include(o => o.Shippers);
+            return View(orders.ToList());
+        }
     }
 }
