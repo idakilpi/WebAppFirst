@@ -226,6 +226,7 @@
     <Content Include="Icons\lamp.svg" />
     <Content Include="Icons\laptop-fill.svg" />
     <Content Include="Icons\laptop.svg" />
+    <Content Include="Icons\pencil-square.svg" />
     <Content Include="Icons\x-square.svg" />
     <Content Include="Models\NorthwindModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -317,6 +318,7 @@
     <Content Include="Views\Orders\OrderSummary.cshtml" />
     <Content Include="Views\Orders\OrderHeading.cshtml" />
     <Content Include="Views\Orders\_OrderLines.cshtml" />
+    <Content Include="Views\Orders\_ModalEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
